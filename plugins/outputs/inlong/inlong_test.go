@@ -18,17 +18,17 @@ type MockProducer struct {
 	managerURL string
 }
 
-func (p *MockProducer) Send(context.Context, dataproxy.Message) error {
+func (*MockProducer) Send(context.Context, dataproxy.Message) error {
 	return nil
 }
 
-func (p *MockProducer) SendAsync(context.Context, dataproxy.Message, dataproxy.Callback) {
+func (*MockProducer) SendAsync(context.Context, dataproxy.Message, dataproxy.Callback) {
 }
 
-func (p *MockProducer) Close() {
+func (*MockProducer) Close() {
 }
 
-func (p *MockProducer) SendMessage(context.Context, dataproxy.Message) error {
+func (*MockProducer) SendMessage(context.Context, dataproxy.Message) error {
 	return nil
 }
 

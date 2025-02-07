@@ -28,7 +28,7 @@ type Inlong struct {
 	serializer   telegraf.Serializer
 }
 
-func (i *Inlong) SampleConfig() string {
+func (*Inlong) SampleConfig() string {
 	return sampleConfig
 }
 
